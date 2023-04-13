@@ -1,0 +1,20 @@
+@font-face {
+    font-family: CCShopLogo;
+    src: url(http://localhost/CCShop/components/fonts/GetVoIPGrotesque.ttf)
+}
+@font-face {
+    font-family: KanitRegular;
+    src: url(http://localhost/CCShop/components/fonts/Kanit-Regular.ttf)
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url(http://localhost/CCShop/components/fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik;
+    src: url(http://localhost/CCShop/components/fonts/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: RubikPixel;
+    src: url(http://localhost/CCShop/components/fonts/RubikPixels-Regular.ttf);
+}

@@ -1,0 +1,13 @@
+RewriteEngine on
+
+# Pages
+RewriteRule ^([0-9a-zA-Z-_]+)$ index.php?pg_nm=$1
+RewriteRule ^admin/([0-9a-zA-Z-_]+)$ admin/admin.php?admn_pg_nm=$1
+# Pages
+
+RewriteRule ^Login/login OperationLogin/login.php
+RewriteRule ^Login/logout OperationLogin/logout.php
+RewriteRule ^Login/register OperationLogin/register.php
+RewriteRule ^error/404 components/error/404.html
+
+ErrorDocument 404 http://localhost/CCShop/error/404

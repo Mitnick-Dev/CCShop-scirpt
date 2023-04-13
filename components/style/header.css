@@ -1,0 +1,207 @@
+@font-face {
+    font-family: CCShopLogo;
+    src: url(http://localhost/CCShop/components/fonts/GetVoIPGrotesque.ttf)
+}
+@font-face {
+    font-family: KanitRegular;
+    src: url(http://localhost/CCShop/components/fonts/Kanit-Regular.ttf)
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url(http://localhost/CCShop/components/fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik;
+    src: url(http://localhost/CCShop/components/fonts/Rubik-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcff;
+}
+.header_wrpr {
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s;
+    box-sizing: border-box;
+    padding: 15px 0 15px 0;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-bottom-color: #1c1c1c;
+    /* background-color: #424242e6; */
+    background-color: #303030;
+}
+.website-logo_wrpr {
+    display: flex;
+    flex-direction: row;
+}
+.website-logo_wrpr > img {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: -18px;
+}
+.website_name {
+    color: #cbe0e7;
+    font-size: 28px;
+    font-family: CCShopLogo;
+    white-space: nowrap;
+    margin-left: 100px;
+}
+.header_cntnt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-right: 20px;
+}
+.header-tabs_wrpr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tab-item_cntnr {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.tab-item_cntnr > span {
+    color: #cbe0e7; 
+    font-size: 16px;
+    font-family: KanitRegular;
+    margin-right: 8px;
+}
+.tab-item_cntnr > .ntfctin-point_wrpr {
+    width: 16px;
+    height: 15px;
+    display: flex;
+    position: absolute;
+    top: -5px;
+    left: 22px;
+    align-items: center;
+    justify-content: center;
+    background-color: #6ba54a;
+    border-radius: 20px;
+    color: #cbe0e7;
+    font-size: 10px;
+    font-family: KanitRegular;
+}
+.tab-item_cntnr > i {
+    color: #cbe0e7;
+    font-size: 18px;
+}
+.usr-profile_wrpr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.usr-profile_wrpr > .usr_balance {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 5px;
+    padding: 0px 10px 0px 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: KanitRegular;
+    background-color: #5bc0de;
+}
+.usr-profile_wrpr > .usr_name {
+    color: #cbe0e7;
+    font-size: 18px;
+    font-family: KanitRegular;
+    margin-right: 5px;
+}
+.usr-profile_wrpr > i {
+    color: #cbe0e7;
+    margin-top: 1px;
+}
+.tab-item_cntnr:last-child:hover .usr-profile_wrpr.tip {
+    visibility: visible;
+    height: 115px;
+    padding: 8px 8px 10px 8px;
+}
+.tab-item_cntnr:last-child:hover .usr-profile_wrpr.tip::before {
+    visibility: visible;
+}
+.usr-profile_wrpr.tip {
+    width: calc(100% + 64px);
+    height: 0px;
+    display: flex;
+    top: 35px;
+    right: 0;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0;
+    transition: all .3s;
+    background-color: #282828;
+}
+.usr-profile_wrpr.tip::before {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: -15px;
+    right: 25px;
+    content: "";
+    transition: all .3s;
+    border: .5rem solid transparent;
+    border-bottom-color: #282828;        
+}
+.usr-profile_cntnr.tip {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.itm_wrpr.tip {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0 8px 10px 8px;
+}
+.itm_wrpr.tip:first-child {
+    padding: 4px 8px 10px 8px;
+}
+.itm_wrpr.tip > i {
+    color: #cbe0e7;
+    font-size: 16px;
+    margin-right: 8px;
+}
+.itm_wrpr.tip > span {
+    color: #cbe0e7;
+    font-size: 16px;
+    font-family: KanitRegular;
+}
